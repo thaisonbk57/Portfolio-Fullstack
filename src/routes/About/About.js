@@ -35,7 +35,11 @@ export default function About(props) {
                 text1="SKILLS"
                 color="rgba(231,210,27,1)"
               />
-              <Skills />
+              <div className="row">
+                <div className="col-8 px-0">
+                  <Skills />
+                </div>
+              </div>
             </div>
             <div className="py-1">
               <Heading
