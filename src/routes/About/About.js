@@ -22,7 +22,13 @@ export default function About(props) {
           <div className="col-8">
             <div className="py-1">
               <Heading fontSize="25px" text1="BIO" color="rgba(231,210,27,1)" />
-              <Paragraph color="white" fontSize="20px" padding="5px 0 20px 0">
+              <Paragraph
+                style={{
+                  color: "white",
+                  fontSize: "20px",
+                  padding: "5px 0 20px 0"
+                }}
+              >
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Laborum hic, eligendi suscipit totam dolore nobis dicta id
                 placeat, accusamus aliquid voluptas praesentium nulla libero
@@ -47,7 +53,13 @@ export default function About(props) {
                 text1="INTERESTS"
                 color="rgba(231,210,27,1)"
               />
-              <Paragraph color="white" fontSize="20px" padding="5px 0">
+              <Paragraph
+                style={{
+                  color: "white",
+                  fontSize: "20px",
+                  padding: "5px 0 20px 0"
+                }}
+              >
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Laborum hic, eligendi suscipit totam dolore nobis dicta id
                 placeat, accusamus aliquid voluptas praesentium nulla libero
