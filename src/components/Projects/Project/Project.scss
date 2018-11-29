@@ -1,0 +1,44 @@
+.Project {
+  padding: 0 15px;
+  margin-bottom: 40px;
+
+  &--image {
+    border: 3px solid white;
+    margin-bottom: 15px;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  a {
+    &:link,
+    &:visited,
+    &:active {
+      display: block;
+      padding: 12px;
+      text-decoration: none;
+      margin-bottom: 8px;
+      cursor: pointer;
+      color: black;
+    }
+
+    &:hover {
+      background: rgba(231, 210, 27, 1);
+    }
+  }
+
+  &--liveLink {
+    background: rgba(216, 219, 224, 1);
+  }
+
+  &--githubLink {
+    background: black;
+    color: white !important;
+
+    &:hover {
+      color: #000 !important;
+    }
+  }
+}
