@@ -1,0 +1,22 @@
+.NavRight {
+  flex-basis: 50%;
+  background: rgba(85, 92, 104, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: show1 0.3s ease-out 1 forwards;
+
+  @keyframes show1 {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+
+.NavBar {
+  list-style-type: none;
+  text-align: center;
+}
