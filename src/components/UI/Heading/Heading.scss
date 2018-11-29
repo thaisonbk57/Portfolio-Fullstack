@@ -1,0 +1,21 @@
+h1.Heading {
+  font-size: 90px;
+  color: white;
+
+  span {
+    color: rgba(231, 210, 27, 1);
+  }
+}
+
+h2.Heading {
+  color: white;
+  font-size: 25px;
+  background: rgba(96, 104, 117, 0.5);
+  padding: 5px 15px;
+}
+
+.Heading {
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
