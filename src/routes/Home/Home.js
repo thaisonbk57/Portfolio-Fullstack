@@ -7,7 +7,7 @@ import SocialIcon from "./../../components/UI/SocialIcon/SocialIcon";
 
 export default function Home(props) {
   return (
-    <section className="Home">
+    <section className="Home container">
       <div className="hero">
         <Heading text1="Thaison" text2="Dang" />
         <Heading text1="Frontend Web Developer" type="secondary" />
