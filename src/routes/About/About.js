@@ -17,6 +17,13 @@ export default function About(props) {
           <div className="col-4">
             <div className="Logo-wrapper">
               <Logo />
+              <div className="py-3 text-center">
+                <button className="ResumeDownloadBtn">
+                  <a href="./../../assets/imgs/avatar.png" download>
+                    Download Resume
+                  </a>
+                </button>
+              </div>
             </div>
           </div>
           <div className="col-8">
