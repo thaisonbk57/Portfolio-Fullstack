@@ -8,6 +8,7 @@ import Nav from "./components/Nav/Nav";
 import NavToggle from "./components/NavToggle/NavToggle";
 import Home from "./routes/Home/Home";
 import About from "./routes/About/About";
+import MyWorks from "./routes/MyWorks/MyWorks";
 
 class App extends Component {
   state = {
@@ -31,7 +32,7 @@ class App extends Component {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/about" exact component={About} />
-            <Route path="/projects" exact render={() => <h1>PROJECTS</h1>} />
+            <Route path="/projects" exact component={MyWorks} />
             <Route path="/contact" exact render={() => <h1>CONTACT</h1>} />
           </Switch>
         </Layout>
