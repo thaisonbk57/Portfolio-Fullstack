@@ -8,7 +8,7 @@ export default function Skills() {
   return (
     <div className="Skill">
       <Skill skill="HTML" level="85" />
-      <Skill skill="CSS" level="80" />
+      <Skill skill="CSS (SCSS)" level="80" />
       <Skill skill="JS" level="80" />
       <Skill skill="ReactJS - Redux" level="75" />
       <Skill skill="NodeJS - ExpressJS" level="60" />
