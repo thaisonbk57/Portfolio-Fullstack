@@ -6,6 +6,7 @@ import "./App.scss";
 import Layout from "./hocs/Layout/Layout";
 import Nav from "./components/Nav/Nav";
 import NavToggle from "./components/NavToggle/NavToggle";
+import Home from "./routes/Home/Home";
 
 class App extends Component {
   state = {
@@ -27,7 +28,7 @@ class App extends Component {
           {nav}
           <NavToggle toggleNavHandler={this.toggleNavHandler} />
           <Switch>
-            <Route path="/" exact render={() => <h1>HOME</h1>} />
+            <Route path="/" exact render={props => <Home {...props} />} />
             <Route path="/about" exact render={() => <h1>ABOUT</h1>} />
             <Route path="/projects" exact render={() => <h1>PROJECTS</h1>} />
             <Route path="/contact" exact render={() => <h1>CONTACT</h1>} />
