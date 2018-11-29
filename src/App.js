@@ -4,31 +4,15 @@ import { Route, Switch } from "react-router-dom";
 import "./App.scss";
 
 import Layout from "./hocs/Layout/Layout";
-import Nav from "./components/Nav/Nav";
-import NavToggle from "./components/NavToggle/NavToggle";
 import Home from "./routes/Home/Home";
 import About from "./routes/About/About";
 import MyWorks from "./routes/MyWorks/MyWorks";
 
 class App extends Component {
-  state = {
-    showNav: false
-  };
-
-  toggleNavHandler = () => {
-    this.setState({
-      showNav: !this.state.showNav
-    });
-  };
-
   render() {
-    let nav = this.state.showNav ? <Nav /> : null;
-
     return (
       <div className="App">
         <Layout>
-          {nav}
-          <NavToggle toggleNavHandler={this.toggleNavHandler} />
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/about" exact component={About} />
