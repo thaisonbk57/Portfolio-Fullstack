@@ -1,0 +1,19 @@
+.NavItem {
+  a,
+  a:active,
+  a:visited {
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    transition: color 0.2s;
+    padding: 20px 0;
+    display: inline-block;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+
+  a.active,
+  a:hover {
+    color: rgba(231, 210, 27, 1) !important;
+  }
+}
