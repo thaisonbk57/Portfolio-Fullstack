@@ -10,7 +10,7 @@ export default function NavRight(props) {
       <ul className="NavBar">
         <NavItem link={"/"} label={"HOME"} exact />
         <NavItem link={"/about"} label={"ABOUT ME"} />
-        <NavItem link={"/projects"} label={"MY WORK"} />
+        <NavItem link={"/projects"} label={"MY WORKS"} />
         <NavItem link={"/contact"} label={"HOW TO REACH ME"} />
       </ul>
     </div>
