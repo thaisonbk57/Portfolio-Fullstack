@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-weight: 400;
 }
 
 body {
@@ -17,6 +18,17 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: rgb(219, 233, 31);
+  background: rgb(25, 150, 129);
+}
+
+::selection {
+  color: rgb(219, 233, 31);
+  background: rgb(25, 150, 129);
 }
 
 // dark gray: rgba(85,92,104,1)
