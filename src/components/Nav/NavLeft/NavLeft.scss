@@ -18,5 +18,27 @@
   .Logo-wrapper {
     height: 300px;
     width: 300px;
+    @media screen and (max-width: 900px) {
+      height: 250px;
+      width: 250px;
+    }
+
+    @media screen and (max-width: 600px) {
+      height: 120px;
+      width: 120px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-basis: 30%;
+
+    @keyframes show {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
   }
 }

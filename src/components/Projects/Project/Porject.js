@@ -8,7 +8,7 @@ export default function Porject(props) {
   const { liveLink, githubLink, photoLink, _id } = props;
 
   return (
-    <div className="Project col-3">
+    <div className="Project col-3 col-md-4 col-sm-6 col-xs-12">
       <div className="Project--image">
         <img src={ProjectPhoto} alt="project" />
       </div>
