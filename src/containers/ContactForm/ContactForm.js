@@ -3,11 +3,18 @@ import axios from "axios";
 
 import "./ContactForm.scss";
 
+const axiosInstance = axios.create({
+  baseURL: "http://localhost:5000", //@TODO: change this baseURL
+  timeout: 5000
+});
+
 export default class ContactForm extends Component {
   state = {
     name: "",
     email: "",
-    message: ""
+    message: "",
+    sending: false,
+    serverMsg: ""
   };
 
   onChangeHandler = e => {
@@ -21,6 +28,9 @@ export default class ContactForm extends Component {
 
   submitFormHandler = e => {
     e.preventDefault();
+    this.setState({
+      sending: true
+    });
     const [name, email, message] = [
       this.state.name,
       this.state.email,
@@ -29,13 +39,43 @@ export default class ContactForm extends Component {
 
     const formData = { name, email, message };
 
-    //@TODO: send this formData to the server
+    axiosInstance
+      .post("/contact/message", formData)
+      .then(res => {
+        console.log(res);
+        this.setState({
+          sending: false,
+          name: "",
+          email: "",
+          message: "",
+          serverMsg: "Your message was sent!"
+        });
+
+        setTimeout(() => {
+          this.setState({
+            serverMsg: ""
+          });
+        }, 3000);
+      })
+      .catch(err => {
+        console.log(err);
+        this.setState({
+          sending: false,
+          serverMsg: "Something went wrong! Please try again later!"
+        });
+
+        setTimeout(() => {
+          this.setState({
+            serverMsg: ""
+          });
+        }, 3000);
+      });
   };
 
   render() {
     return (
       <div className="ContactForm">
-        <form onSubmit={this.submitFormHandler} autoComplete="off">
+        <form onSubmit={this.submitFormHandler}>
           <div className="form-group">
             <label htmlFor="name">Name</label>
             <input
@@ -69,9 +109,17 @@ export default class ContactForm extends Component {
               id="message"
               onChange={this.onChangeHandler}
               value={this.state.message}
+              required
             />
           </div>
-          <input type="submit" value="SEND" />
+          <input
+            type="submit"
+            value={this.state.sending ? "Sending..." : "SEND"}
+            disabled={this.state.sending ? true : false}
+          />
+          <span style={{ color: "white", fontSize: "18px" }} className="px-5">
+            {this.state.serverMsg}
+          </span>
         </form>
       </div>
     );
