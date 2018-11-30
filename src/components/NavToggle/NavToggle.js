@@ -7,7 +7,12 @@ export default function NavToggle(props) {
 
   return (
     <div className="NavToggle">
-      <input id="nav-toggle" type="checkbox" checked={showNav ? true : false} />
+      <input
+        id="nav-toggle"
+        type="checkbox"
+        checked={showNav ? true : false}
+        readOnly
+      />
       <label onClick={toggleNavHandler} htmlFor="nav-toggle">
         <span className="stick-1" />
         <span className="stick-2" />
