@@ -5,7 +5,7 @@ import "./Project.scss";
 import ProjectPhoto from "./../../../assets/imgs/projects/p1.jpeg";
 
 export default function Porject(props) {
-  const { liveLink, githubLink, photoLink, _id } = props;
+  const { liveLink, githubLink, photoLink, _id } = props; //@TODO: use link passed from props
 
   return (
     <div className="Project col-3 col-md-4 col-sm-6 col-xs-12">
@@ -19,7 +19,7 @@ export default function Porject(props) {
           rel="noopener noreferrer"
           target="_blank"
         >
-          <i class="fas fa-eye" /> Live
+          <i className="fas fa-eye" /> Live
         </a>
         <a
           href={githubLink}
@@ -27,7 +27,7 @@ export default function Porject(props) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fab fa-github" /> Github
+          <i className="fab fa-github" /> Github
         </a>
       </div>
     </div>

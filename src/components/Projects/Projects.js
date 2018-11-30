@@ -47,7 +47,7 @@ export default function Projects(props) {
   return (
     <div className="Projects">
       {projects.map(project => (
-        <Project {...project} />
+        <Project key={project._id} {...project} />
       ))}
     </div>
   );
