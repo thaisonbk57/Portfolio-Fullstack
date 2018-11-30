@@ -4,10 +4,10 @@ import { Route, Switch } from "react-router-dom";
 import "./App.scss";
 
 import Layout from "./hocs/Layout/Layout";
-import Home from "./routes/Home/Home";
-import About from "./routes/About/About";
-import MyWorks from "./routes/MyWorks/MyWorks";
-import Contact from "./routes/Contact/Contact";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import MyWorks from "./pages/MyWorks/MyWorks";
+import Contact from "./pages/Contact/Contact";
 
 class App extends Component {
   render() {
