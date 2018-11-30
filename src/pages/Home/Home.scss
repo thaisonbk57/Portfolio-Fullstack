@@ -5,13 +5,17 @@
   background-size: cover;
   width: 100vw;
   height: 100vh;
+}
 
-  .hero {
-    position: absolute;
-    top: 40%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 100%;
-    padding: 64px;
+.hero {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 64px;
+
+  @media screen and (max-width: 600px) {
+    padding: 30px;
   }
 }

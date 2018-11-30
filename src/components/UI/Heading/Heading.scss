@@ -5,6 +5,14 @@ h1.Heading {
   span {
     color: rgba(231, 210, 27, 1);
   }
+
+  @media screen and (max-width: 900px) {
+    font-size: 70px;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 60px;
+  }
 }
 
 h2.Heading {
@@ -12,6 +20,10 @@ h2.Heading {
   font-size: 25px;
   background: rgba(96, 104, 117, 0.5);
   padding: 5px 0px;
+
+  @media screen and (max-width: 900px) {
+    font-size: 20px;
+  }
 }
 
 .Heading {

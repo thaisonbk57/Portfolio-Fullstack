@@ -1,5 +1,9 @@
 .container {
   padding: 64px;
+
+  @media screen and (max-width: 600px) {
+    padding: 30px;
+  }
 }
 
 .row {
