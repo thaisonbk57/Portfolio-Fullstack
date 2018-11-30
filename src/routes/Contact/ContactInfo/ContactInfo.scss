@@ -1,0 +1,19 @@
+.ContactInfo {
+  color: white;
+  font-size: 18px;
+  padding: 5px 0;
+
+  b {
+    color: rgba(231, 210, 27, 1);
+    font-weight: 600;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: yellow;
+      text-decoration: underline;
+    }
+  }
+}

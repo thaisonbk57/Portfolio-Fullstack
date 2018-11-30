@@ -7,6 +7,7 @@ import Layout from "./hocs/Layout/Layout";
 import Home from "./routes/Home/Home";
 import About from "./routes/About/About";
 import MyWorks from "./routes/MyWorks/MyWorks";
+import Contact from "./routes/Contact/Contact";
 
 class App extends Component {
   render() {
@@ -17,7 +18,7 @@ class App extends Component {
             <Route path="/" exact component={Home} />
             <Route path="/about" exact component={About} />
             <Route path="/projects" exact component={MyWorks} />
-            <Route path="/contact" exact render={() => <h1>CONTACT</h1>} />
+            <Route path="/contact" exact component={Contact} />
           </Switch>
         </Layout>
       </div>
