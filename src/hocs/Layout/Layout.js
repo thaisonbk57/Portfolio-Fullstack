@@ -26,7 +26,6 @@ export default class Layout extends Component {
           <NavToggle toggleNavHandler={this.toggleNavHandler} />
         </header>
         <main>{this.props.children}</main>
-        <footer>Footer</footer>
       </div>
     );
   }
