@@ -14,25 +14,26 @@ export default function About(props) {
       <Heading text1="Get to know me..." type="secondary" />
       <div className="About--content py-5">
         <div className="row">
-          <div className="col-4">
+          <div className="col-4 col-md-12">
             <div className="Logo-wrapper">
               <Logo />
-              <div className="py-3 text-center">
-                <button className="ResumeDownloadBtn">
-                  <a href="./../../assets/imgs/avatar.png" download>
-                    Download Resume
-                  </a>
-                </button>
-              </div>
+              <div className="py-3 text-center" />
+            </div>
+            <div className="py-3 text-center">
+              <button className="ResumeDownloadBtn">
+                <a href="./../../assets/imgs/avatar.png" download>
+                  Download Resume
+                </a>
+              </button>
             </div>
           </div>
-          <div className="col-8">
+          <div className="col-8 col-md-12">
             <div className="py-1">
               <Heading fontSize="25px" text1="BIO" color="rgba(231,210,27,1)" />
               <Paragraph
                 style={{
                   color: "white",
-                  fontSize: "20px",
+                  fontSize: "18px",
                   padding: "5px 0 20px 0"
                 }}
               >
@@ -49,7 +50,7 @@ export default function About(props) {
                 color="rgba(231,210,27,1)"
               />
               <div className="row">
-                <div className="col-8 px-0">
+                <div className="col-8 col-md-12 px-0">
                   <Skills />
                 </div>
               </div>
@@ -63,7 +64,7 @@ export default function About(props) {
               <Paragraph
                 style={{
                   color: "white",
-                  fontSize: "20px",
+                  fontSize: "18px",
                   padding: "5px 0 20px 0"
                 }}
               >
