@@ -9,37 +9,43 @@ const projects = [
     _id: 1,
     liveLink: "#",
     githubLink: "#",
-    photoLink: "#"
+    photoLink: "",
+    name: "Demo Project"
   },
   {
     _id: 2,
     liveLink: "#",
     githubLink: "#",
-    photoLink: "#"
+    photoLink: "",
+    name: "Demo Project"
   },
   {
     _id: 3,
     liveLink: "#",
     githubLink: "#",
-    photoLink: "#"
+    photoLink: "",
+    name: "Demo Project"
   },
   {
     _id: 4,
     liveLink: "#",
     githubLink: "#",
-    photoLink: "#"
+    photoLink: "",
+    name: "Demo Project"
   },
   {
     _id: 5,
     liveLink: "#",
     githubLink: "#",
-    photoLink: "#"
+    photoLink: "",
+    name: "Demo Project"
   },
   {
     _id: 6,
     liveLink: "#",
     githubLink: "#",
-    photoLink: "#"
+    photoLink: "",
+    name: "Demo Project"
   }
 ];
 
