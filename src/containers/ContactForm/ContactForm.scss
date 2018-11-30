@@ -1,0 +1,33 @@
+.ContactForm {
+  .form-group {
+    margin-bottom: 20px;
+    label {
+      font-size: 20px;
+      color: rgba(231, 210, 27, 1);
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .form-control {
+      width: 100%;
+      display: block;
+      padding: 10px;
+      font-size: 18px;
+      outline: none;
+      border: none;
+    }
+  }
+
+  textarea {
+    resize: none;
+    height: 200px;
+  }
+
+  [type="submit"] {
+    border: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background: rgba(231, 210, 27, 1);
+  }
+}
