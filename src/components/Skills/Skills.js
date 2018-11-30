@@ -4,15 +4,41 @@ import "./Skills.scss";
 
 import Skill from "./Skill/Skill";
 
+const skills = [
+  {
+    name: "HTML5",
+    level: "85"
+  },
+  {
+    name: "CSS (SCSS)",
+    level: "80"
+  },
+  {
+    name: "Javascript",
+    level: "80"
+  },
+  {
+    name: "Bootstrap",
+    level: "70"
+  },
+  {
+    name: "ReactJS - Redux",
+    level: "75"
+  },
+  {
+    name: "NodeJS (ExpressJS)",
+    level: "75"
+  },
+  {
+    name: "MongoDB (Mongoose)",
+    level: "60"
+  }
+];
+
 export default function Skills() {
-  return (
-    <div className="Skill">
-      <Skill skill="HTML" level="85" />
-      <Skill skill="CSS (SCSS)" level="80" />
-      <Skill skill="JS" level="80" />
-      <Skill skill="ReactJS - Redux" level="75" />
-      <Skill skill="NodeJS - ExpressJS" level="60" />
-      <Skill skill="MongoDB - Mongoose" level="60" />
-    </div>
-  );
+  const skillSet = skills.map(skill => (
+    <Skill key={skill.name} skill={skill.name} level={skill.level} />
+  ));
+
+  return <div className="Skill">{skillSet}</div>;
 }
