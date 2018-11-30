@@ -1,15 +1,15 @@
 .Skill {
   margin-bottom: 20px;
   &-name {
-    color: white;
+    color: rgba(231, 210, 27, 1);
     margin-bottom: 5px;
   }
 
   &-bar {
     position: relative;
-    background: #fff;
-    border-radius: 5px;
-    height: 20px;
+    background: rgb(126, 127, 129);
+    border-radius: 3px;
+    height: 18px;
   }
 
   &-level {
@@ -17,9 +17,8 @@
     height: 100%;
     top: 0;
     left: 0;
-    // background: rgb(11, 147, 151);
-    background: rgba(231, 210, 27, 1);
-    border-radius: 5px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 3px;
 
     span {
       position: absolute;
