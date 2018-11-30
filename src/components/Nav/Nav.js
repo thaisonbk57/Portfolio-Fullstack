@@ -6,10 +6,12 @@ import NavLeft from "./NavLeft/NavLeft";
 import NavRight from "./NavRight/NavRight";
 
 export default function Nav(props) {
+  const { toggleNavHandler } = props;
+
   return (
     <div className="Nav">
       <NavLeft />
-      <NavRight />
+      <NavRight toggleNavHandler={toggleNavHandler} />
     </div>
   );
 }

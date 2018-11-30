@@ -17,13 +17,18 @@ export default class Layout extends Component {
   };
 
   render() {
-    let nav = this.state.showNav ? <Nav /> : null;
+    let nav = this.state.showNav ? (
+      <Nav toggleNavHandler={this.toggleNavHandler} />
+    ) : null;
 
     return (
       <div className="Layout">
         <header>
           {nav}
-          <NavToggle toggleNavHandler={this.toggleNavHandler} />
+          <NavToggle
+            showNav={this.state.showNav}
+            toggleNavHandler={this.toggleNavHandler}
+          />
         </header>
         <main>{this.props.children}</main>
       </div>
