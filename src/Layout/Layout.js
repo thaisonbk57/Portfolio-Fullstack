@@ -2,8 +2,8 @@ import React, { Component } from "react";
 
 import "./Layout.scss";
 
-import Nav from "./../../components/Nav/Nav";
-import NavToggle from "./../../components/NavToggle/NavToggle";
+import Nav from "./../components/Nav/Nav";
+import NavToggle from "./../components/NavToggle/NavToggle";
 
 export default class Layout extends Component {
   state = {
