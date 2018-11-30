@@ -11,8 +11,8 @@ function Contact(props) {
     <div className="Contact container">
       <Heading text1="Contact" text2="me" />
       <Heading text1="This is how you can reach me..." type="secondary" />
-      <div className="py-5">
-        <div className="col-6">
+      <div className="row">
+        <div className="col-6 col-md-12 py-3">
           <ContactInfo
             contactMethod="Phone"
             contactAddress={<a href="tel:+4915168194576">0151 681 94 576</a>}
@@ -30,7 +30,7 @@ function Contact(props) {
             contactAddress="Strassmannstr. 41, 10249 Berlin, Germany"
           />
         </div>
-        <div className="col-6">
+        <div className="col-6 col-md-12 py-3">
           <ContactForm />
         </div>
       </div>
