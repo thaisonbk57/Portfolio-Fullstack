@@ -3,7 +3,7 @@ import React from "react";
 import "./SocialIcon.scss";
 
 export default function SocialIcon(props) {
-  const { name, color, link } = props;
+  const { name, link } = props;
 
   return (
     <a
@@ -12,7 +12,7 @@ export default function SocialIcon(props) {
       rel="noopener noreferrer"
       target="_blank"
     >
-      <i style={{ color }} className={name} />
+      <i className={name} />
     </a>
   );
 }
