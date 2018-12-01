@@ -4,7 +4,7 @@ import axios from "axios";
 import "./ContactForm.scss";
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:5000", //@TODO: change this baseURL
+  baseURL: "https://portfolio-server-side.herokuapp.com",
   timeout: 5000
 });
 
