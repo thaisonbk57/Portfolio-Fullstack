@@ -4,8 +4,7 @@ import axios from "axios";
 import "./ContactForm.scss";
 
 const axiosInstance = axios.create({
-  baseURL: "https://portfolio-server-side.herokuapp.com",
-  timeout: 5000
+  baseURL: "https://portfolio-server-side.herokuapp.com"
 });
 
 export default class ContactForm extends Component {
