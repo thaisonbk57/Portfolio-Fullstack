@@ -1,5 +1,7 @@
 .Skill {
   margin-bottom: 20px;
+  overflow: hidden;
+
   &-name {
     color: rgba(231, 210, 27, 1);
     margin-bottom: 5px;
@@ -19,6 +21,7 @@
     left: 0;
     background: rgba(255, 255, 255, 1);
     border-radius: 3px;
+    transform: translateX(-110%);
 
     span {
       position: absolute;
@@ -27,6 +30,21 @@
       transform: translate(-50%, -50%);
       color: rgba(85, 92, 104, 1);
       font-weight: 500;
+    }
+  }
+}
+
+@for $i from 1 through 7 {
+  .Skill-level-#{$i} {
+    animation: animatedSkill 0.5s ease-out 0.1s * $i 1 forwards;
+
+    @keyframes animatedSkill {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
     }
   }
 }
