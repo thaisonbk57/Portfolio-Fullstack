@@ -3,7 +3,7 @@ import React from "react";
 import "./Skill.scss";
 
 export default function Skill(props) {
-  const { skill, level, id } = props;
+  const { skill, level, order } = props;
 
   return (
     <div className="Skill">
@@ -11,7 +11,7 @@ export default function Skill(props) {
       <div className="Skill-bar">
         <div
           style={{ width: `${level}%` }}
-          className={`Skill-level Skill-level-${id}`}
+          className={`Skill-level Skill-level-${order}`}
         >
           <span>{level}</span>
         </div>

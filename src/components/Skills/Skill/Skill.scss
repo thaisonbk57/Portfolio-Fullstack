@@ -34,7 +34,7 @@
   }
 }
 
-@for $i from 1 through 7 {
+@for $i from 0 through 6 {
   .Skill-level-#{$i} {
     animation: animatedSkill 0.5s ease-out 0.1s * $i 1 forwards;
 

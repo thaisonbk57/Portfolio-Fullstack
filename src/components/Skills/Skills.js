@@ -7,33 +7,27 @@ import Skill from "./Skill/Skill";
 const skills = [
   {
     name: "HTML5",
-    level: "85",
-    id: 1
+    level: "85"
   },
   {
     name: "CSS (SCSS)",
-    level: "80",
-    id: 2
+    level: "80"
   },
   {
     name: "Javascript",
-    level: "80",
-    id: 3
+    level: "80"
   },
   {
     name: "Bootstrap",
-    level: "70",
-    id: 4
+    level: "70"
   },
   {
     name: "ReactJS - Redux",
-    level: "75",
-    id: 5
+    level: "75"
   },
   {
     name: "NodeJS (ExpressJS)",
-    level: "75",
-    id: 6
+    level: "75"
   },
   {
     name: "MongoDB (Mongoose)",
@@ -43,12 +37,12 @@ const skills = [
 ];
 
 export default function Skills() {
-  const skillSet = skills.map(skill => (
+  const skillSet = skills.map((skill, index) => (
     <Skill
       key={skill.name}
       skill={skill.name}
       level={skill.level}
-      id={skill.id}
+      order={index}
     />
   ));
 
