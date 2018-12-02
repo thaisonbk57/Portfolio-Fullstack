@@ -1,6 +1,8 @@
 .Project {
   padding: 0 15px;
   margin-bottom: 40px;
+  opacity: 0;
+  overflow: hidden;
 
   &--image {
     border: 3px solid white;
@@ -66,5 +68,21 @@
     color: white;
     z-index: 20;
     font-size: 23px;
+  }
+}
+
+// animation for project items
+@for $i from 0 through 20 {
+  .Project-#{$i} {
+    animation: project 0.5s ease-out 0.3s * $i + 0.1s forwards;
+
+    @keyframes project {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
   }
 }

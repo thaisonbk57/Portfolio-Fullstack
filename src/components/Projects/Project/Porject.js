@@ -5,10 +5,10 @@ import "./Project.scss";
 import ProjectPhoto from "./../../../assets/imgs/projects/p1.jpeg";
 
 export default function Porject(props) {
-  const { liveLink, githubLink, photoLink, name } = props; //@TODO: use link passed from props
+  const { liveLink, githubLink, photoLink, name, order } = props; //@TODO: use link passed from props
 
   return (
-    <div className="Project col-3 col-md-6 col-sm-12">
+    <div className={`Project Project-${order} col-3 col-md-6 col-sm-12`}>
       <div className="Project--image">
         <img src={photoLink || ProjectPhoto} alt="project" />
         <p className="Project--name">{name}</p>

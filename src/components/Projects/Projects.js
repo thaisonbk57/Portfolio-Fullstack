@@ -52,8 +52,8 @@ const projects = [
 export default function Projects(props) {
   return (
     <div className="Projects">
-      {projects.map(project => (
-        <Project key={project._id} {...project} />
+      {projects.map((project, index) => (
+        <Project key={project._id} order={index} {...project} />
       ))}
     </div>
   );
