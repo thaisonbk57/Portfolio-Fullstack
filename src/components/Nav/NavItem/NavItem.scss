@@ -1,4 +1,7 @@
 .NavItem {
+  opacity: 0;
+  overflow: hidden;
+
   a,
   a:active,
   a:visited {
@@ -20,5 +23,23 @@
   a.active,
   a:hover {
     color: rgba(231, 210, 27, 1) !important;
+  }
+}
+
+// animation for NavItem
+@for $i from 0 through 3 {
+  .NavItem-#{$i} {
+    animation: navItem 0.4s ease-out 0.2s * $i + 0.1s forwards;
+
+    @keyframes navItem {
+      0% {
+        opacity: 0;
+        transform: translateX(110%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
   }
 }
