@@ -2,15 +2,16 @@ import React from "react";
 
 import "./Project.scss";
 
-import ProjectPhoto from "./../../../assets/imgs/projects/p1.jpeg";
-
-export default function Porject(props) {
+export default function Project(props) {
   const { liveLink, githubLink, photoLink, name, order } = props; //@TODO: use link passed from props
 
   return (
     <div className={`Project Project-${order} col-3 col-md-6 col-sm-12`}>
       <div className="Project--image">
-        <img src={photoLink || ProjectPhoto} alt="project" />
+        <img
+          src={require(`./../../../assets/imgs/projects/${photoLink}`)}
+          alt="project"
+        />
         <p className="Project--name">{name}</p>
       </div>
       <div>
