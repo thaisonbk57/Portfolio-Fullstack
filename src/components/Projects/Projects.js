@@ -21,12 +21,11 @@ const projects = [
     name: "Vietbowl Restaurant"
   },
   {
-    _id: 3,
-    liveLink: "https://tom-and-jerry-sp.firebaseapp.com/",
-    githubLink:
-      "https://github.com/thaisonbk57/Project-6-Build-a-turn-based-board-game",
-    photoLink: "p3.png",
-    name: "Tom & Jerry Game"
+    _id: 6,
+    liveLink: "https://portfolio-thaisondang.firebaseapp.com/",
+    githubLink: "https://github.com/thaisonbk57/Portfolio-Fullstack",
+    photoLink: "p6.png",
+    name: "Portfolio"
   },
   {
     _id: 4,
@@ -36,6 +35,15 @@ const projects = [
     photoLink: "p4.png",
     name: "Film Festival"
   },
+  {
+    _id: 3,
+    liveLink: "https://tom-and-jerry-sp.firebaseapp.com/",
+    githubLink:
+      "https://github.com/thaisonbk57/Project-6-Build-a-turn-based-board-game",
+    photoLink: "p3.png",
+    name: "Tom & Jerry Game"
+  },
+
   {
     _id: 5,
     liveLink: "https://todo-app-bk57.firebaseapp.com/",
