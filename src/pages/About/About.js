@@ -29,18 +29,34 @@ export default function About(props) {
           </div>
           <div className="col-8 col-md-12">
             <div className="py-1">
-              <Heading fontSize="25px" text1="BIO" color="rgba(231,210,27,1)" />
+              <Heading
+                fontSize="25px"
+                text1="SUMMARY"
+                color="rgba(231,210,27,1)"
+              />
               <Paragraph
                 style={{
                   color: "white",
                   fontSize: "18px",
-                  padding: "5px 0 20px 0"
+                  padding: "5px 0 20px 0",
+                  lineHeight: 1.5
                 }}
               >
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Laborum hic, eligendi suscipit totam dolore nobis dicta id
-                placeat, accusamus aliquid voluptas praesentium nulla libero
-                cumque architecto maiores, ex neque? Incidunt!
+                I'm Thai Son Dang, a junior Frontend Developer with over 6
+                months of experience in{" "}
+                <b style={{ fontWeight: 600, color: "yellow" }}>MERN</b> stack,
+                with good knowledge of{" "}
+                <b style={{ fontWeight: 600, color: "yellow" }}>
+                  HTML, CSS and Javascript
+                </b>
+                . <br />
+                <br />
+                Learning new languages and technologies is what I am passionate
+                about (graduated from OpenClassroom. I have been self-taught
+                most of the time). I like to help other and tend to work well
+                within groups. I can also do some mentoring tasks because often
+                time I make videos to summarize what I have learned under the
+                aspect of beginners.
               </Paragraph>
             </div>
             <div className="py-1">
@@ -55,7 +71,7 @@ export default function About(props) {
                 </div>
               </div>
             </div>
-            <div className="py-1">
+            {/* <div className="py-1">
               <Heading
                 fontSize="25px"
                 text1="INTERESTS"
@@ -73,7 +89,7 @@ export default function About(props) {
                 placeat, accusamus aliquid voluptas praesentium nulla libero
                 cumque architecto maiores, ex neque? Incidunt!
               </Paragraph>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
