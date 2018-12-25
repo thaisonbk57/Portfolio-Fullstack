@@ -21,7 +21,7 @@ export default function About(props) {
             </div>
             <div className="py-3 text-center">
               <button className="ResumeDownloadBtn">
-                <a href="./../../assets/imgs/avatar.png" download>
+                <a href="./Resume.pdf" target="_blank">
                   Download Resume
                 </a>
               </button>
