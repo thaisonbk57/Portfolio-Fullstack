@@ -21,7 +21,7 @@ const projects = [
     name: "Vietbowl Restaurant"
   },
   {
-    _id: 6,
+    _id: 3,
     liveLink: "https://portfolio-thaisondang.firebaseapp.com/",
     githubLink: "https://github.com/thaisonbk57/Portfolio-Fullstack",
     photoLink: "p6.png",
@@ -36,20 +36,26 @@ const projects = [
     name: "Film Festival"
   },
   {
-    _id: 3,
+    _id: 5,
     liveLink: "https://tom-and-jerry-sp.firebaseapp.com/",
     githubLink:
       "https://github.com/thaisonbk57/Project-6-Build-a-turn-based-board-game",
     photoLink: "p3.png",
     name: "Tom & Jerry Game"
   },
-
   {
-    _id: 5,
+    _id: 6,
     liveLink: "https://todo-app-bk57.firebaseapp.com/",
     githubLink: "https://github.com/thaisonbk57/Todo",
     photoLink: "p5.png",
     name: "Todo App"
+  },
+  {
+    _id: 7,
+    liveLink: "https://quanxua.de/",
+    githubLink: "https://github.com/thaisonbk57/QuanXua-Restaurant",
+    photoLink: "p7.png",
+    name: "Quanxua Restaurant"
   }
 ];
 
