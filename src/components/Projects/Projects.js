@@ -11,7 +11,7 @@ const projects = [
     githubLink:
       "https://github.com/thaisonbk57/Project-7-Review-Restaurants-App",
     photoLink: "p1.png",
-    name: "Review Restaurants"
+    name: "Where2eat"
   },
   {
     _id: 2,
